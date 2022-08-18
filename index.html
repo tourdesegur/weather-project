@@ -37,11 +37,9 @@
           <img src="media/sun.png" />
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-              <p class="temp">22°</p>
-              <p class="temp-sub">
-                <a href="#" id="c-convert">C°</a> |
-                <a href="#" id="f-convert">F°</a>
-              </p>
+              <div>
+                <span class="temp">22</span> <span class="celsius">°</span>
+              </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
               <p class="p-info">
@@ -70,69 +68,21 @@
               <button type="submit" class="btn btn-success">Search</button>
             </div>
           </div>
-          <div class="row row-quote">
-            <p class="quote">"Three days rain will empty any sky"</p>
-          </div>
+
+          <p class="quote">"Three days rain will empty any sky"</p>
+
           <div class="row">
-            <p class="days">5 days</p>
+            <p class="days">Next week</p>
           </div>
           <div class="row row-days">
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="day">Mon</h2>
-                  <br />
-                  <i class="fa-solid fa-cloud-showers-heavy"></i>
-                  <br />
-                  <p class="temp-small">18°</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="day">Tue</h2>
-                  <br />
-                  <i class="fa-solid fa-cloud-bolt"></i>
-                  <br />
-                  <p class="temp-small">16°</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="day">Wed</h2>
-                  <br />
-                  <i class="fa-solid fa-cloud"></i>
-                  <br />
-                  <p class="temp-small">20°</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="day">Thu</h2>
-                  <br />
-                  <i class="fa-solid fa-cloud-sun"></i>
-                  <br />
-                  <p class="temp-small">24°</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="day">Fri</h2>
-                  <br />
-                  <i class="fa-solid fa-sun"></i>
-                  <br />
-                  <p class="temp-small">31°</p>
+            <div class="weather-forecast" id="forecast">
+              <div class="col-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h2 class="day">Mon</h2>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <p class="temp-small">18° &zwnj; &zwnj; 14°</p>
+                  </div>
                 </div>
               </div>
             </div>
