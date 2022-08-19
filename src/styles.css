@@ -37,19 +37,19 @@ h3 {
   font-weight: 600;
 }
 
-img {
-  width: 300px;
+a {
+  text-decoration: none;
+}
+
+.main-icon {
+  width: 370px;
   display: block;
   margin: 0 auto;
   padding-left: 150px;
   margin: 0;
   position: relative;
-  top: -40px;
-  left: 50px;
-}
-
-a {
-  text-decoration: none;
+  top: -70px;
+  left: -15px;
 }
 
 .btn-success {
@@ -59,6 +59,7 @@ a {
 }
 
 .container {
+  width: fit-content;
   margin: 3em 2em;
   background-color: white;
   border: 0px solid #595959;
@@ -68,19 +69,24 @@ a {
 
 .subtitle {
   margin: 0 0 20px 0;
+  color: ;
+}
+
+#description {
+  font-size: 20px;
 }
 
 .temp {
   color: #595959;
   font-size: 136px;
   position: relative;
-  top: 5px;
+  top: -50px;
   font-weight: 300;
 }
 
 .celsius {
   position: relative;
-  top: -30px;
+  top: -90px;
   font-size: 64px;
   color: #595959;
   font-weight: 300;
@@ -89,11 +95,11 @@ a {
 .p-info {
   margin: 43px 0 20px 0;
   position: relative;
-  top: -10px;
+  top: -55px;
 }
 
 .col-main {
-  background-color: rgb(122, 205, 180, 0.08);
+  background-color: rgba(83, 208, 171, 0.08);
   padding-left: 40px;
 }
 .col-color {
@@ -106,6 +112,7 @@ a {
 
 .quote {
   margin: 0 80px;
+  margin-top: 45px;
   font-size: 24px;
   font-style: italic;
   text-align: center;
@@ -117,9 +124,10 @@ a {
 }
 
 .card {
+  background-color: none;
   width: 120px;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
 }
 
@@ -136,11 +144,6 @@ a {
   font-weight: 400;
 }
 
-i {
-  font-size: 28px;
-  margin: 10px auto;
-}
-
 .temp-small {
   font-size: 24px;
   color: #595959;
@@ -154,4 +157,14 @@ i {
 .day {
   margin: 20px 0;
   font-size: 24px;
+}
+
+.icon-forecast {
+  max-width: 60px;
+  opacity: 0.8;
+}
+
+.row-days {
+  margin-left: 2px;
+  margin-top: 10px;
 }

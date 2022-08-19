@@ -24,6 +24,11 @@ function currentCityWeather(response) {
   city.innerHTML = response.data.name;
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
+  let weather = response.data.weather[0].main;
+
+  let iconElement = document.querySelector("#main-icon");
+  iconElement.setAttribute("src", `media/${weather}.png`);
+
   let mainTemp = document.querySelector(".temp");
   mainTemp.innerHTML = Math.round(response.data.main.temp);
   let humidity = document.querySelector(".humidity");
@@ -70,7 +75,9 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
+  console.log(response);
+  console.log(response.data);
+  console.log(response.data.daily[0].weather[0].main);
   let forecastDaily = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
@@ -82,7 +89,9 @@ function displayForecast(response) {
                 <div class="card">
                   <div class="card-body">
                     <h2 class="day">${formatDay(forecastDay.dt)}</h2>
-                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <span><img src="media/small-icons/${
+                      forecastDay.weather[0].main
+                    }.png" alt="" class="icon-forecast" id="icon"></span>
                     <p class="temp-small">
                       ${Math.round(
                         forecastDay.temp.max

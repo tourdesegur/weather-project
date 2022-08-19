@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App on Netlify</title>
+    <script
+      src="https://kit.fontawesome.com/e4eb0e1777.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -12,10 +15,7 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/d1766197d1.js"
-      crossorigin="anonymous"
-    ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +23,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App on Netlify</title>
   </head>
   <body>
     <div class="container">
@@ -34,7 +35,7 @@
             <span class="day-time">Sunday, 16:00</span> <br />
             <span id="description">Partly cloudy</span>
           </h2>
-          <img src="media/sun.png" />
+          <span class="main-icon"></span><img src="media/Clear.png" class="main-icon" id="main-icon" /></span>
           <div class="row">
             <div class="col-7">
               <div>
