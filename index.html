@@ -28,8 +28,10 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-main">
-          <h3><a href="" id="current-location">Current city</a></h3>
+        <div class="col-4 col-main">
+           <button type="submit" class="btn btn-current" id="current-location">
+          Current city
+        </button>
           <h1 id="city">Lisboa</h1>
           <h2 class="subtitle-date-time">
             <span class="day-time">Sunday, 16:00</span> <br />
@@ -51,23 +53,23 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-color">
-          <div class="row search-row">
-            <div class="col-xs-6 col-sm-8 col-md-9 col-lg-9 search-box">
-              <form id="search-location">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="input-location"
-                    placeholder="Enter location"
-                  />
+        <div class="col-8 col-color">
+          <div class="row">
+             <form id="search-location">
+                <div class="row search-row">
+                    <div class="col-9 search-box">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="input-location"
+                          placeholder="Enter location"
+                        /> 
+                    </div>
+                    <div class="col-3 submit-button">
+                        <input type="submit" value="Search" class="btn btn-success"></button>
+                    </div>
                 </div>
-              </form>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 submit-button">
-              <button type="submit" class="btn btn-success">Search</button>
-            </div>
+             </form>
           </div>
 
           <p class="quote">"Three days rain will empty any sky"</p>

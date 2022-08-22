@@ -1,3 +1,5 @@
+debugger;
+
 let now = new Date();
 console.log(now);
 
@@ -108,10 +110,14 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getCurrentPosition() {
+  navigator.geolocation.getCurrentPosition(showCurrentPosition);
+}
+
 navigator.geolocation.getCurrentPosition(showCurrentPosition);
 
 let searchForm = document.querySelector("#search-location");
 searchForm.addEventListener("submit", changeCity);
 
 let buttonCurrentLocation = document.querySelector("#current-location");
-buttonCurrentLocation.addEventListener("click", showCurrentPosition);
+buttonCurrentLocation.addEventListener("click", getCurrentPosition);
