@@ -114,7 +114,13 @@ function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(showCurrentPosition);
 }
 
-navigator.geolocation.getCurrentPosition(showCurrentPosition);
+function showStartCity() {
+  let key = "f8620effd7466dda0c3530a3be2c5f5e";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${`Lisbon`}&appid=${key}&units=metric`;
+  axios.get(url).then(currentCityWeather);
+}
+
+showStartCity();
 
 let searchForm = document.querySelector("#search-location");
 searchForm.addEventListener("submit", changeCity);
